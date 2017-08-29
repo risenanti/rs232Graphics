@@ -1,0 +1,124 @@
+xst -intstyle ise -ifn "C:/Users/Student/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/test_10_19_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/test_10_19_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/test_10_19_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/test_10_19_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "F:/Anton/new RS232_amer Fall 2016/uartConstraints.ucf" -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+xst -intstyle ise -ifn "C:/Users/Student/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc "F:/Anton/new RS232_amer Fall 2016/uartConstraints.ucf" -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_19_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.xst" -ofn "C:/Users/Student/Desktop/test_10_25_2016/TopLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uartConstraints.ucf -p xc3s700a-fg484-5 TopLevel.ngc TopLevel.ngd  
+map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf -ucf uartConstraints.ucf 
+bitgen -intstyle ise -f TopLevel.ut TopLevel.ncd 

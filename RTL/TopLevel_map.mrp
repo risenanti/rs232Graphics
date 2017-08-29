@@ -1,0 +1,327 @@
+Release 12.3 Map M.70d (nt64)
+Xilinx Mapping Report File for Design 'TopLevel'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s700a-fg484-5 -cm area -ir off -pr off
+-c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+Target Device  : xc3s700a
+Target Package : fg484
+Target Speed   : -5
+Mapper Version : spartan3a -- $Revision: 1.52 $
+Mapped Date    : Tue Nov 01 12:52:06 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Logic Utilization:
+  Total Number Slice Registers:          83 out of  11,776    1%
+    Number used as Flip Flops:           67
+    Number used as Latches:              16
+  Number of 4 input LUTs:               146 out of  11,776    1%
+Logic Distribution:
+  Number of occupied Slices:            103 out of   5,888    1%
+    Number of Slices containing only related logic:     103 out of     103 100%
+    Number of Slices containing unrelated logic:          0 out of     103   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         185 out of  11,776    1%
+    Number used as logic:               146
+    Number used as a route-thru:         39
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 24 out of     372    6%
+  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of MULT18X18SIOs:                1 out of      20    5%
+  Number of RAMB16BWEs:                  10 out of      20   50%
+
+Average Fanout of Non-Clock Nets:                3.89
+
+Peak Memory Usage:  266 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net FAKEaddrb_and0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc3s700a' is a WebPack part.
+INFO:LIT:243 - Logical network doneLED has no load.
+INFO:LIT:395 - The above info message is repeated 4 more times for the following
+   (max. 5 shown):
+   blkmem/doutb<3>,
+   blkmem/doutb<2>,
+   blkmem/doutb<1>,
+   blkmem/doutb<0>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  24 block(s) removed
+   4 block(s) optimized away
+  25 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "blkmem/doutb<3>" is sourceless and has been removed.
+The signal "blkmem/doutb<2>" is sourceless and has been removed.
+The signal "blkmem/doutb<1>" is sourceless and has been removed.
+The signal "blkmem/doutb<0>" is sourceless and has been removed.
+The signal "blkmem/BU2/N1" is sourceless and has been removed.
+The signal
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_4" is
+sourceless and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_2_f5"
+(MUX) removed.
+The signal
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_3" is
+sourceless and has been removed.
+The signal
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_41" is
+sourceless and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_2_f5_0"
+(MUX) removed.
+The signal
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_31" is
+sourceless and has been removed.
+The signal
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_42" is
+sourceless and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_2_f5_1"
+(MUX) removed.
+The signal
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_32" is
+sourceless and has been removed.
+The signal
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_43" is
+sourceless and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_2_f5_2"
+(MUX) removed.
+The signal
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_33" is
+sourceless and has been removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb8" is sourceless
+and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_431" (ROM)
+removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb7" is sourceless
+and has been removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb6<1>" is
+sourceless and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_331" (ROM)
+removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb6<0>" is
+sourceless and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_321" (ROM)
+removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb5" is sourceless
+and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_421" (ROM)
+removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb4" is sourceless
+and has been removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb3" is sourceless
+and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_411" (ROM)
+removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb2" is sourceless
+and has been removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb1<1>" is
+sourceless and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_311" (ROM)
+removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb1<0>" is
+sourceless and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_31" (ROM)
+removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb0" is sourceless
+and has been removed.
+ Sourceless block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_41" (ROM)
+removed.
+The signal "blkmem/BU2/U0/blk_mem_generator/valid.cstr/ram_doutb" is sourceless
+and has been removed.
+Unused block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3a_noinit.ram/dpra
+m.ram" (RAMB16BWE) removed.
+Unused block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/s3a_noinit.ram/dpra
+m.ram" (RAMB16BWE) removed.
+Unused block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/s3a_noinit.ram/dpra
+m.ram" (RAMB16BWE) removed.
+Unused block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/s3a_noinit.ram/dpra
+m.ram" (RAMB16BWE) removed.
+Unused block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/s3a_noinit.ram/dpra
+m.ram" (RAMB16BWE) removed.
+Unused block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/s3a_noinit.ram/dpra
+m.ram" (RAMB16BWE) removed.
+Unused block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/s3a_noinit.ram/dpra
+m.ram" (RAMB16BWE) removed.
+Unused block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/s3a_noinit.ram/dpra
+m.ram" (RAMB16BWE) removed.
+Unused block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/s3a_noinit.ram/dpra
+m.ram" (RAMB16BWE) removed.
+Unused block
+"blkmem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/s3a_noinit.ram/dpra
+m.ram" (RAMB16BWE) removed.
+Unused block "blkmem/GND" (ZERO) removed.
+Unused block "blkmem/VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		blkmem/BU2/XST_GND
+VCC 		blkmem/BU2/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| hsync                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| rxOutLED<0>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| rxOutLED<1>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| rxOutLED<2>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| rxOutLED<3>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| rxOutLED<4>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| rxOutLED<5>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| rxOutLED<6>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| rxOutLED<7>                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| topCLK                             | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| uart_rxTop                         | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| vga_color<0>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vga_color<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vga_color<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vga_color<3>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vga_color<4>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vga_color<5>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vga_color<6>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vga_color<7>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vga_color<8>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vga_color<9>                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vga_color<10>                      | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vga_color<11>                      | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| vsync                              | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
