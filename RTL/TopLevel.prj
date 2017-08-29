@@ -1,5 +1,0 @@
-vhdl work "ipcore_dir/blockram.vhd"
-vhdl work "vga_sync.vhd"
-vhdl work "uartReciever.vhd"
-vhdl work "modMCounter.vhd"
-vhdl work "TopLevel.vhd"

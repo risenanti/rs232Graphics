@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/Student/Desktop/test_10_19_2016/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Student/Desktop/test_10_19_2016/xst"
-elaborate
--ifn vga_sync.prj
--ifmt mixed

@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Student\Desktop\test_10_25_2016\TopLevel.ncd
-OUTFILE=C:\Users\Student\Desktop\test_10_25_2016\TopLevel.bit
-FAMILY=Spartan3A and Spartan3AN
-PART=xc3s700a-5fg484
-WORKINGDIR=C:\Users\Student\Desktop\test_10_25_2016
-LICENSE=WebPack
-USER_INFO=0_0_631
